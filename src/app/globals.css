@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* @import "../tailwind/components/components.css"; */
+html {
+  font-family: var(--font-vazirmatn);
+}
+
+:lang(en) {
+  font-family: var(--font-nunito);
+}
