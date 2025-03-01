@@ -6,6 +6,9 @@ import {
   IconQuoteUp,
   IconSignpost,
 } from "../_components/icons/icons";
+import FeaturesSection from "./_sections/features-section/FeaturesSection";
+import AboutUsSection from "./_sections/about-us-section/AboutUsSection";
+import classNames from "classnames";
 
 type HomeProps = {
   params: Promise<{
@@ -22,7 +25,12 @@ export default async function Home({ params }: HomeProps) {
   return (
     <main className="flex flex-col items-center bg-gradient-to-b to-secondary-1000 from-secondary-600">
       {/* Hero */}
-      <section className="bg-hero-pattern bg-no-repeat bg-center xl:bg-left container flex items-center justify-center w-full h-screen">
+      <section
+        className={classNames(
+          "bg-hero-pattern bg-no-repeat bg-center container flex items-center justify-center w-full h-screen",
+          locale === "en" ? "xl:bg-left" : "xl:bg-right"
+        )}
+      >
         <div className="flex flex-col items-start gap-y-8 p-12 ">
           <h1 className="text-7xl font-bold text-primary-600 mb-4 flex items-center gap-x-2">
             <IconQuoteUp className="size-16 text-primary-600" />
@@ -35,60 +43,12 @@ export default async function Home({ params }: HomeProps) {
         </div>
         <Image src="/hero-social.svg" alt="" width={702} height={521} />
       </section>
-      <section className="container flex flex-col items-center w-full">
-        <h1 className="text-3xl font-bold text-primary-600">
-          {t("someFeatures")}
-        </h1>
 
-        <div className="my-8 grid grid-cols-12 gap-4">
-          <div className="relative col-span-4 flex flex-col gap-y-4 p-8 border border-primary-600 rounded-lg overflow-hidden">
-            <div className="animate-pulse absolute inset-0 bg-gradient-to-tr from-tertiary-600"></div>
+      {/* Features */}
+      <FeaturesSection locale={locale} />
 
-            <div className="relative z-10 flex flex-col gap-2">
-              <h2 className="font-bold text-lg flex items-center gap-x-2">
-                <IconDocumentText className="size-8 text-primary-600" />
-                {t("newspaper")}
-              </h2>
-              <p className="text-sm font-light">{t("newspaper_description")}</p>
-            </div>
-          </div>
-
-          <div className="relative col-span-4 flex flex-col gap-y-4 p-8 border border-primary-600 rounded-lg overflow-hidden">
-            <div className="animate-pulse absolute inset-0 bg-gradient-to-tr from-tertiary-600"></div>
-            <div className="relative z-10 flex flex-col gap-2">
-              <h2 className="font-bold text-lg flex items-center gap-x-2">
-                <IconMirroringScreen className="size-8 text-primary-600" />
-                {t("wall")}
-              </h2>
-              <p className="text-sm font-light">{t("wall_description")}</p>
-            </div>
-          </div>
-
-          <div className="relative col-span-4 flex flex-col gap-y-4 p-8 border border-primary-600 rounded-lg overflow-hidden">
-            <div className="animate-pulse absolute inset-0 bg-gradient-to-tr from-tertiary-600"></div>
-            <div className="relative z-10 flex flex-col gap-2">
-              <h2 className="font-bold text-lg flex items-center gap-x-2">
-                <IconSignpost className="size-8 text-primary-600" />
-                {t("post")}
-              </h2>
-              <p className="text-sm font-light">{t("post_description")}</p>
-            </div>
-          </div>
-        </div>
-
-        <section
-          id="about-us"
-          className="flex flex-col items-center gap-y-8 my-16"
-        >
-          <h1 className="text-3xl font-bold text-primary-600">
-            {t("aboutUs")}
-          </h1>
-
-          <p className="text-secondary-200 text-center max-w-2xl">
-            {t("aboutUs_description")}
-          </p>
-        </section>
-      </section>
+      {/* About Us */}
+      <AboutUsSection locale={locale} />
     </main>
   );
 }

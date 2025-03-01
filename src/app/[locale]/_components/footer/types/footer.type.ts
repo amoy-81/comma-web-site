@@ -1,0 +1,4 @@
+type FooterProps = {
+    locale: string;
+  };
+  

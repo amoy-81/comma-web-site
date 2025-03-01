@@ -45,7 +45,7 @@ export default async function RootLayout({
         <TranslationsProvider locale={locale} resources={resources}>
           <Header locale={locale} />
           <div>{children}</div>
-          <Footer />
+          <Footer locale={locale} />
         </TranslationsProvider>
       </body>
     </html>

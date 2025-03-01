@@ -1,1 +1,22 @@
-{"about":"About","aboutUs":"About Us","aboutUs_description":"comma is an innovative social network designed for better communication and idea sharing. On comma , users can publish their personal writings, post messages on the public wall, and share their posts with others. With a simple and user-friendly interface, this platform provides a space for constructive and open interaction. Our goal is to create an environment where people can freely express their thoughts and experiences. Join comma and make your voice heard in the digital world! ","comma":"Comma","getStarted":"Get Started","heroSubTitle":"In Comma, familiar with a world of ideas, connections and memorable moments show Here every word is important and every moment is worth sharing. to the family Come join and introduce your voice and story to the world!","heroTitle":"COMMA...","home":"Home","loginWithGoogle":"Login with Google","newspaper":"Newspaper","newspaper_description":"Each user can create their personal newspaper and publish their writings in it.","newspapers":"Newspapers","post":"Post","post_description":"Users can create posts and share them with others.","posts":"Posts","someFeatures":"Some Features","wall":"Wall","wall_description":"Users can write short notes or messages on the wall, visible to everyone."}
+{
+  "about": "About",
+  "aboutUs": "About Us",
+  "aboutUs_description": "comma is an innovative social network designed for better communication and idea sharing. On comma , users can publish their personal writings, post messages on the public wall, and share their posts with others. With a simple and user-friendly interface, this platform provides a space for constructive and open interaction. Our goal is to create an environment where people can freely express their thoughts and experiences. Join comma and make your voice heard in the digital world! ",
+  "approvedBy": "Approved by",
+  "comma": "Comma",
+  "getStarted": "Get Started",
+  "gstp": "GSTP",
+  "heroSubTitle": "In Comma, familiar with a world of ideas, connections and memorable moments show Here every word is important and every moment is worth sharing. to the family Come join and introduce your voice and story to the world!",
+  "heroTitle": "COMMA...",
+  "home": "Home",
+  "loginWithGoogle": "Login with Google",
+  "newspaper": "Newspaper",
+  "newspaper_description": "Each user can create their personal newspaper and publish their writings in it.",
+  "newspapers": "Newspapers",
+  "post": "Post",
+  "post_description": "Users can create posts and share them with others.",
+  "posts": "Posts",
+  "someFeatures": "Some Features",
+  "wall": "Wall",
+  "wall_description": "Users can write short notes or messages on the wall, visible to everyone."
+}

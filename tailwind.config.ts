@@ -10,6 +10,8 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/tile.svg')",
+        "box-pattern": "url('/box-pattern.svg')",
+        "shape-pattern": "url('/shape-pattern.svg')",
       },
       colors: {
         primary: {

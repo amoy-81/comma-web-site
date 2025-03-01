@@ -1,0 +1,4 @@
+type SectionBaseProps = {
+    locale: string;
+  };
+  

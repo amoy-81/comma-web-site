@@ -11,7 +11,7 @@ export const TopNavigation: React.FC = () => {
     { title: t("home"), href: "/" },
     { title: t("newspapers"), href: "/newspapers" },
     { title: t("posts"), href: "/posts" },
-    { title: t("about"), href: "/about" },
+    { title: t("about"), href: "/#about-us" },
   ];
 
   const pathname = usePathname();
