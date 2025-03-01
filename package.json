@@ -3,25 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev --turbopack",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "i18next": "^24.2.2",
+    "i18next-resources-to-backend": "^1.2.1",
+    "next": "15.1.2",
+    "next-i18n-router": "^5.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.2"
+    "react-i18next": "^15.4.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
-    "@eslint/eslintrc": "^3"
+    "i18nexus-cli": "^3.5.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
