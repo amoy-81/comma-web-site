@@ -1,4 +1,3 @@
-type FooterProps = {
-    locale: string;
-  };
-  
+export type FooterProps = {
+  locale: string;
+};

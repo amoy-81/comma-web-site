@@ -6,6 +6,7 @@ import {
 import initTranslations from "@/i18n";
 import { FC } from "react";
 import FeatureCard from "./components/feature-card/FeatureCard";
+import { SectionBaseProps } from "../types/sections.type";
 
 const features = [
   {

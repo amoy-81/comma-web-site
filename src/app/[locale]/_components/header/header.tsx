@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { TopNavigation } from "./top-navigation";
 import Link from "next/link";
 import initTranslations from "@/i18n";
+import { HeaderProps } from "./types/header.type";
 
 export const Header: FC<HeaderProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);

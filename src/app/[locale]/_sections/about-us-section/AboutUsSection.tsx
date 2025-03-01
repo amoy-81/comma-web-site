@@ -1,5 +1,6 @@
 import initTranslations from "@/i18n";
 import { FC } from "react";
+import { SectionBaseProps } from "../types/sections.type";
 
 const AboutUsSection: FC<SectionBaseProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);

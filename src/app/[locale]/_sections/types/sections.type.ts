@@ -1,4 +1,3 @@
-type SectionBaseProps = {
-    locale: string;
-  };
-  
+export type SectionBaseProps = {
+  locale: string;
+};

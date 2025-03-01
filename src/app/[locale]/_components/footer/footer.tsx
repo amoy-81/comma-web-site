@@ -2,6 +2,7 @@ import initTranslations from "@/i18n";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
+import { FooterProps } from "./types/footer.type";
 
 export const Footer: FC<FooterProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);
@@ -18,7 +19,10 @@ export const Footer: FC<FooterProps> = async ({ locale }) => {
         />
       </div>
       <p className="text-sm">{t("approvedBy")}</p>
-      <Link href="https://www.gstp.ir" className="text-primary-600 text-sm font-semibold">
+      <Link
+        href="https://www.gstp.ir"
+        className="text-primary-600 text-sm font-semibold"
+      >
         {t("gstp")}
       </Link>
     </footer>

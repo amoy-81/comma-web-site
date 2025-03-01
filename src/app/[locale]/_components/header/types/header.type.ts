@@ -1,3 +1,3 @@
-type HeaderProps = {
+export type HeaderProps = {
   locale: string;
 };
