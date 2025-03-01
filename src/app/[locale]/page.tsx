@@ -1,11 +1,6 @@
 import initTranslations from "@/i18n";
 import Image from "next/image";
-import {
-  IconDocumentText,
-  IconMirroringScreen,
-  IconQuoteUp,
-  IconSignpost,
-} from "../_components/icons/icons";
+import { IconQuoteUp } from "../_components/icons/icons";
 import FeaturesSection from "./_sections/features-section/FeaturesSection";
 import AboutUsSection from "./_sections/about-us-section/AboutUsSection";
 import classNames from "classnames";

@@ -2,14 +2,14 @@
 
 import { I18nextProvider } from "react-i18next";
 import initTranslations from "@/i18n";
-import { createInstance } from "i18next";
+import { createInstance, ResourceLanguage } from "i18next";
 import { ReactNode } from "react";
 import { i18nNamespaces } from "@/constants/global.const";
 
 type TranslationsProviderProps = {
   children: ReactNode;
   locale: string;
-  resources?: Record<string, any>;
+  resources?: Record<string, ResourceLanguage>;
 };
 
 export default function TranslationsProvider({
