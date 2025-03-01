@@ -41,7 +41,7 @@ export default async function RootLayout({
       dir={dir(locale)}
       className={`${vazirmatn.variable} ${nunito.variable}`}
     >
-      <body className="text-white min-h-screen grid grid-rows-[80px_1fr_auto] bg-secondary-600">
+      <body className="text-white min-h-screen grid grid-rows-[1fr_auto] bg-secondary-600">
         <TranslationsProvider locale={locale} resources={resources}>
           <Header locale={locale} />
           <div>{children}</div>

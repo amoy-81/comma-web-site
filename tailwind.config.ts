@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/tile.svg')",
+      },
       colors: {
         primary: {
           100: "#F2F6FB",

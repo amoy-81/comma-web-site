@@ -8,7 +8,7 @@ export const Header: FC<HeaderProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);
 
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="fixed top-0 left-0 w-full flex justify-center items-center bg-secondary-600/80 backdrop-blur">
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between p-4">
           <div className="flex items-center gap-2">
@@ -19,7 +19,9 @@ export const Header: FC<HeaderProps> = async ({ locale }) => {
               height={32}
               className="h-8"
             />
-            <h1 className="text-lg font-bold text-primary-600 translate-y-0.5">{t("comma")}</h1>
+            <h1 className="text-lg font-bold text-primary-600 translate-y-0.5">
+              {t("comma")}
+            </h1>
           </div>
 
           <div className="flex items-center justify-between px-4">
