@@ -8,7 +8,7 @@ const AboutUsSection: FC<SectionBaseProps> = async ({ locale }) => {
   return (
     <section
       id="about-us"
-      className="flex flex-col items-center gap-y-8 my-16 bg-shape-pattern bg-no-repeat bg-center bg-cover p-8 border border-primary-600 rounded-lg"
+      className="flex flex-col items-center gap-y-8 max-lg:mx-6 my-16 bg-shape-pattern bg-no-repeat bg-center bg-cover p-8 border border-primary-600 rounded-lg"
     >
       <h1 className="text-3xl font-bold text-primary-600">{t("aboutUs")}</h1>
 

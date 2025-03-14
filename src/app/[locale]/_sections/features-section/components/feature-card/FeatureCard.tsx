@@ -7,7 +7,7 @@ const FeatureCard: FC<FeaturesSectionProps> = ({
   description,
 }) => {
   return (
-    <div className="relative col-span-4 flex flex-col gap-y-4 p-8 border border-primary-600 rounded-lg overflow-hidden bg-box-pattern bg-no-repeat bg-center bg-cover">
+    <div className="relative lg:col-span-4 col-span-12 flex flex-col gap-y-4 p-8 border border-primary-600 rounded-lg overflow-hidden bg-box-pattern bg-no-repeat bg-center bg-cover">
       <div className="animate-pulse absolute inset-0 bg-gradient-to-tr from-tertiary-600"></div>
       <div className="relative z-10 flex flex-col gap-2">
         <h2 className="font-bold text-lg flex items-center gap-x-2">

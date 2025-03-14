@@ -6,7 +6,7 @@ const WhatIsComma: FC<SectionBaseProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);
 
   return (
-    <section className="container flex flex-col items-center w-full mb-28">
+    <section className="container flex flex-col items-center w-full mb-28 max-lg:mt-20 max-lg:px-6">
       <h1 className="text-3xl font-bold text-primary-600">
         {t("whatIsComma")}
       </h1>

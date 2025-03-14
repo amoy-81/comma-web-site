@@ -23,7 +23,7 @@ export default async function Home({ params }: HomeProps) {
       {/* Hero */}
       <section
         className={classNames(
-          "bg-hero-pattern bg-no-repeat bg-center container flex items-center justify-center w-full h-screen",
+          "bg-hero-pattern bg-no-repeat bg-center max-xl:container flex max-lg:flex-col items-center justify-center w-full lg:h-screen max-lg:mt-20",
           locale === "en" ? "xl:bg-left" : "xl:bg-right"
         )}
       >
@@ -37,7 +37,13 @@ export default async function Home({ params }: HomeProps) {
             {t("getStarted")}
           </button>
         </div>
-        <Image src="/hero-social.svg" alt="" width={702} height={521} />
+        <Image
+          src="/hero-social.svg"
+          className="max-xl:hidden max-sm:block max-sm:w-full"
+          alt=""
+          width={702}
+          height={521}
+        />
       </section>
 
       {/* What is Comma */}
