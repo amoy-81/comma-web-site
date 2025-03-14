@@ -47,6 +47,10 @@ export default async function RootLayout({
           name="description"
           content="کاما یک شبکه اجتماعی جدید است که برای ارتباط یکپارچه طراحی شده است. در کاما، کاربران می توانند افکار، عکس ها و ویدیوها را فورا به اشتراک بگذارند."
         />
+        <meta
+          name="google-site-verification"
+          content="eCnqvJdGCkid9rp9ukfR8X4-3ZgSSGHsd2OWdN-FhaA"
+        />
         <meta name="keywords" content="کاما" />
         <meta name="keywords" content="شبکه اجتماعی" />
         <meta name="keywords" content="پست" />
