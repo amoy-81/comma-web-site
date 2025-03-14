@@ -4,6 +4,7 @@ import { IconQuoteUp } from "../_components/icons/icons";
 import FeaturesSection from "./_sections/features-section/FeaturesSection";
 import AboutUsSection from "./_sections/about-us-section/AboutUsSection";
 import classNames from "classnames";
+import WhatIsComma from "./_sections/what-is-comma/WhatIsComma";
 
 type HomeProps = {
   params: Promise<{
@@ -38,6 +39,9 @@ export default async function Home({ params }: HomeProps) {
         </div>
         <Image src="/hero-social.svg" alt="" width={702} height={521} />
       </section>
+
+      {/* What is Comma */}
+      <WhatIsComma locale={locale} />
 
       {/* Features */}
       <FeaturesSection locale={locale} />

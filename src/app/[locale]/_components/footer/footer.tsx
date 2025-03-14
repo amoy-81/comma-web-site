@@ -18,13 +18,25 @@ export const Footer: FC<FooterProps> = async ({ locale }) => {
           className="h-8"
         />
       </div>
-      <p className="text-sm">{t("approvedBy")}</p>
-      <Link
-        href="https://www.gstp.ir"
-        className="text-primary-600 text-sm font-semibold"
-      >
-        {t("gstp")}
-      </Link>
+      <div className="flex items-center gap-2">
+        <p className="text-sm">{t("approvedBy")}</p>
+        <Link
+          href="https://www.gstp.ir"
+          className="text-primary-600 text-sm font-semibold"
+        >
+          {t("gstp")}
+        </Link>
+      </div>
+      |
+      <div className="flex items-center gap-2">
+        <p className="text-sm">{t("poweredBy")}</p>
+        <Link
+          href="https://solix-team.ir"
+          className="text-primary-600 text-sm font-semibold"
+        >
+          {t("solix")}
+        </Link>
+      </div>
     </footer>
   );
 };

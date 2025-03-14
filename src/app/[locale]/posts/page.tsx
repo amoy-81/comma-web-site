@@ -1,7 +1,11 @@
 import React from "react";
 
 const PostsPage = () => {
-  return <div>PostsPage</div>;
+  return <section>
+    <h1>
+      
+    </h1>
+  </section>;
 };
 
 export default PostsPage;
