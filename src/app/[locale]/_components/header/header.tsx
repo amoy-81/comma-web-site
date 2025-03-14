@@ -9,7 +9,7 @@ export const Header: FC<HeaderProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);
 
   return (
-    <div className="fixed max-xl:px-4 top-0 left-0 w-full flex justify-center items-center bg-secondary-600/80 backdrop-blur">
+    <div className="fixed max-xl:px-4 z-40 top-0 left-0 w-full flex justify-center items-center bg-secondary-600/80 backdrop-blur">
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between p-4">
           <div className="flex items-center gap-2">

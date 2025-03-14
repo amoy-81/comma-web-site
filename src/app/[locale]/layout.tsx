@@ -44,7 +44,9 @@ export default async function RootLayout({
       <body className="text-white min-h-screen grid grid-rows-[1fr_auto] bg-secondary-600">
         <TranslationsProvider locale={locale} resources={resources}>
           <Header locale={locale} />
-          <div>{children}</div>
+          <div className="bg-gradient-to-b to-secondary-1000 from-secondary-600">
+            {children}
+          </div>
           <Footer locale={locale} />
         </TranslationsProvider>
       </body>

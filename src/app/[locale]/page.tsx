@@ -19,7 +19,7 @@ export default async function Home({ params }: HomeProps) {
   const { t } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <main className="flex flex-col items-center bg-gradient-to-b to-secondary-1000 from-secondary-600">
+    <main className="flex flex-col items-center">
       {/* Hero */}
       <section
         className={classNames(
