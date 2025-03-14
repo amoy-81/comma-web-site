@@ -28,8 +28,8 @@ export default async function Home({ params }: HomeProps) {
         )}
       >
         <div className="flex flex-col items-start gap-y-8 p-12 ">
-          <h1 className="text-7xl font-bold text-primary-600 mb-4 flex items-center gap-x-2">
-            <IconQuoteUp className="size-16 text-primary-600" />
+          <h1 className="md:text-7xl text-4xl font-bold text-primary-600 mb-4 flex items-center gap-x-2">
+            <IconQuoteUp className="md:size-16 size-10 text-primary-600" />
             {t("heroTitle")}
           </h1>
           <p className="text-lg text-secondary-200 mb-8">{t("heroSubTitle")}</p>
