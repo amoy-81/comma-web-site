@@ -22,6 +22,28 @@ const nunito = Nunito({
   variable: "--font-nunito",
 });
 
+export const metadata = {
+  title: "شبکه اجتماعی کاما",
+  description:
+    "کاما یک شبکه اجتماعی جدید است که برای ارتباط یکپارچه طراحی شده است. در کاما، کاربران می توانند افکار، عکس ها و ویدیوها را فورا به اشتراک بگذارند.",
+  keywords: [
+    "کاما",
+    "شبکه اجتماعی",
+    "پست",
+    "پارک علم و فناوری",
+    "پارک علم و فناوری رشت",
+  ],
+  openGraph: {
+    title: "شبکه اجتماعی کاما",
+    description:
+      "کاما یک شبکه اجتماعی جدید است که برای ارتباط یکپارچه طراحی شده است.",
+    images: ["/comma-logo.svg"],
+  },
+  other: {
+    "google-site-verification": "eCnqvJdGCkid9rp9ukfR8X4-3ZgSSGHsd2OWdN-FhaA",
+  },
+};
+
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }
