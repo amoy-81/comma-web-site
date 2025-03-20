@@ -5,6 +5,8 @@ import FeaturesSection from "./_sections/features-section/FeaturesSection";
 import AboutUsSection from "./_sections/about-us-section/AboutUsSection";
 import classNames from "classnames";
 import WhatIsComma from "./_sections/what-is-comma/WhatIsComma";
+import Link from "next/link";
+import { API_BASE_URL } from "@/configs/global.config";
 
 type HomeProps = {
   params: Promise<{
@@ -17,6 +19,8 @@ const i18nNamespaces = ["default"];
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
   const { t } = await initTranslations(locale, i18nNamespaces);
+
+  const loginUrl = `${API_BASE_URL}/auth/google`;
 
   return (
     <main className="flex flex-col items-center">
@@ -33,8 +37,8 @@ export default async function Home({ params }: HomeProps) {
             {t("heroTitle")}
           </h1>
           <p className="text-lg text-secondary-200 mb-8">{t("heroSubTitle")}</p>
-          <button className="bg-primary-600 text-white px-4 py-2 rounded-lg">
-            {t("getStarted")}
+          <button className="bg-primary-600 text-white px-4 py-2 rounded-lg no-underline active:scale-95 transition">
+            <Link href={loginUrl}>{t("getStarted")}</Link>
           </button>
         </div>
         <Image

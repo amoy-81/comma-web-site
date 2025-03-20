@@ -4,9 +4,12 @@ import { TopNavigation } from "./top-navigation";
 import Link from "next/link";
 import initTranslations from "@/i18n";
 import { HeaderProps } from "./types/header.type";
+import { API_BASE_URL } from "@/configs/global.config";
 
 export const Header: FC<HeaderProps> = async ({ locale }) => {
   const { t } = await initTranslations(locale);
+
+  const loginUrl = `${API_BASE_URL}/auth/google`;
 
   return (
     <div className="fixed max-xl:px-4 z-40 top-0 left-0 w-full flex justify-center items-center bg-secondary-600/80 backdrop-blur">
@@ -34,7 +37,7 @@ export const Header: FC<HeaderProps> = async ({ locale }) => {
           </div>
 
           <div className="flex items-center justify-end lg:pr-0">
-            <Link href="/">
+            <Link href={loginUrl}>
               <div className="p-2 bg-white rounded-lg text-secondary-600 flex items-center">
                 {t("loginWithGoogle")}
               </div>
